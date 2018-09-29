@@ -10,16 +10,32 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBOutlet weak var InfoMe: UITextView!
+    
+    @IBAction func Interests(_ sender: Any) {
+        
+        let Name = "Sean Doyle "
+        let Hometown = "DC "
+        let FavoriteColor = "Blue "
+        let FavoriteFood = "Italian Food "
+        let CurrentCity = "Live in Florida "
+        
+        print(Name)
+        print(Hometown)
+        print(FavoriteColor)
+        print(FavoriteFood)
+        print(CurrentCity)
+        
+      
+        
+        let string = Name + Hometown + FavoriteColor + FavoriteFood + CurrentCity
+        
+        InfoMe.text = string
+        
+        
+        
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+    
 }
 
